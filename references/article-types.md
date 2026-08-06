@@ -6,15 +6,15 @@ La base distingue quatre types de notes wiki. Choisir le type d'apres l'objet pr
 
 - Dossier : `wiki/articles/`
 - Template : /templates/article.md
-- Usage : analyse compilee sur un segment, marche, process, levier, hypothese ou modele industriel.
-- Exemple : `wiki/articles/pricing-devis-instantane-tolerie.md`
+- Usage : analyse compilee sur un segment, marche, process, levier, hypothese, these d'investissement ou modele de consolidation.
+- Exemple : `wiki/articles/these-buy-and-build-renovation-energetique.md`
 
 ## Entreprise
 
 - Dossier : `wiki/companies/`
 - Template : /templates/company.md
-- Usage : entreprise qualifiee, sourcee, utile a diligenter, comparer, transformer, rapprocher ou eviter.
-- Exemple : `wiki/companies/sendcutsend.md`
+- Usage : entreprise qualifiee, sourcee, utile a diligenter, comparer, transformer, acquerir, rapprocher ou eviter.
+- Exemple : `wiki/companies/installateur-photovoltaique-exemple.md`
 
 ## Personne
 
@@ -27,5 +27,5 @@ La base distingue quatre types de notes wiki. Choisir le type d'apres l'objet pr
 
 - Dossier : `wiki/concepts/`
 - Template : /templates/concept.md
-- Usage : notion transverse reutilisable dans plusieurs notes : pricing, automatisation, capacite, qualite, IA, devis, planification.
-- Exemple : `wiki/concepts/devis-instantane.md`
+- Usage : notion transverse reutilisable dans plusieurs notes : pricing, automatisation, capacite, qualite, IA, devis, planification, maintenance, financement, integration post-acquisition.
+- Exemple : `wiki/concepts/integration-post-acquisition.md`

@@ -19,11 +19,11 @@ status: <actif/obsolete/conteste>
 
 ## Definition
 
-- <definition utile pour decision industrielle> [fiabilite]
+- <definition utile pour decision d'investissement ou d'execution> [fiabilite]
 
 ## Pourquoi ca compte
 
-- <impact marge, qualite, delai, capacite, cash, pricing ou risque> [fiabilite]
+- <impact marge, qualite, delai, capacite, cash, pricing, recurrence, acquisition ou risque> [fiabilite]
 
 ## Indices
 
@@ -31,7 +31,7 @@ status: <actif/obsolete/conteste>
 
 ## Hypothese business
 
-- <hypothese a tester, diligenter, standardiser, automatiser, internaliser, externaliser ou eviter> [fiabilite]
+- <hypothese a tester, diligenter, acquerir, rapprocher, standardiser, automatiser, internaliser, externaliser ou eviter> [fiabilite]
 
 ## Preuves a collecter
 

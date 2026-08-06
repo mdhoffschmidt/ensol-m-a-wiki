@@ -19,7 +19,7 @@ status: <actif/obsolete/conteste>
 
 ## Definition
 
-- <definition autonome utile pour decision industrielle> [fiabilite]
+- <definition autonome utile pour decision d'investissement ou d'execution> [fiabilite]
 
 ## Faits
 
@@ -27,11 +27,11 @@ status: <actif/obsolete/conteste>
 
 ## Lecture business
 
-- <impact marge, qualite, delai, capacite, cash, pricing ou risque> [fiabilite]
+- <impact marge, qualite, delai, capacite, cash, pricing, recurrence, acquisition ou risque> [fiabilite]
 
 ## Implication business
 
-- <creer, transformer, prioriser, tester, diligenter, standardiser, automatiser, internaliser, externaliser ou eviter> : <raison chiffree ou [nc]>
+- <acquerir, rapprocher, transformer, prioriser, tester, diligenter, standardiser, automatiser, internaliser, externaliser ou eviter> : <raison chiffree ou [nc]>
 
 ## Points ouverts
 

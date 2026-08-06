@@ -5,6 +5,7 @@ Recuperer la source dans `raw/`, puis compiler uniquement la matiere utile dans 
 References utiles :
 
 - /references/business-analysis-grid.md
+- /references/buy-and-build-thesis.md
 - /references/article-types.md
 
 ## 1. Recuperer

@@ -24,7 +24,7 @@ status: <actif/obsolete/conteste>
 - Periode : <periode ou [nc]>
 
 ## Pertinence business
-- <pourquoi cette personne compte : acquisition, expertise, reseau, execution, risque ou [nc]> [fiabilite]
+- <pourquoi cette personne compte : acquisition, integration, expertise, reseau, execution, financement, risque ou [nc]> [fiabilite]
 
 ## Voir aussi
 - [[<entreprise>]]

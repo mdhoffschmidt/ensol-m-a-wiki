@@ -34,16 +34,17 @@ status: <actif/obsolete/conteste>
 - CA : <valeur ou [nc]> ; annee : YYYY ; source : <raw> ; fiabilite : haute/estime/declaratif/nc
 - Effectif : <valeur ou [nc]> ; annee : YYYY ; source : <raw> ; fiabilite : haute/estime/declaratif/nc
 
-## Lecture industrielle
+## Lecture business
 
 - Capacite : <impact capacite ou [nc]> [fiabilite]
 - Differenciation : <source de marge, qualite, delai ou [nc]> [fiabilite]
 - Risque : <risque d'execution, cyclicite, concentration client ou [nc]> [fiabilite]
 - Maillon de chaine de valeur : <maillon ou [nc]> [fiabilite]
+- Potentiel buy-and-build : <plateforme, add-on, cible a eviter ou [nc]> [fiabilite]
 
 ## Implication business
 
-- <diligenter, rapprocher, transformer, prioriser, internaliser, externaliser ou eviter> : <raison chiffree ou [nc]>
+- <acquerir, diligenter, rapprocher, transformer, prioriser, internaliser, externaliser ou eviter> : <raison chiffree ou [nc]>
 
 ## Voir aussi
 

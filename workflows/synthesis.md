@@ -5,6 +5,7 @@ Regenerer une lecture transverse depuis les notes wiki pertinentes.
 References utiles :
 
 - /references/business-analysis-grid.md
+- /references/buy-and-build-thesis.md
 
 ## Etapes
 
@@ -19,6 +20,6 @@ References utiles :
 - Faits et chiffres cles.
 - Topics couverts.
 - Leviers logiciel, donnees, IA ou automatisation.
-- Hypotheses industrielles.
+- Hypotheses d'acquisition, d'integration et d'execution.
 - Risques.
 - Decisions ou prochaines preuves a collecter.
