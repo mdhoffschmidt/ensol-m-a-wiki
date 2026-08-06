@@ -165,7 +165,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "ensol-m-a-wiki"
+                  "title": "⠋ ensol-m-a-wiki"
                 }
               }
             ],
@@ -245,7 +245,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "database/raw-pappers/43.21A/_collection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -255,7 +254,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for _collection"
+              "title": "Backlinks"
             }
           },
           {
@@ -264,12 +263,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "database/raw-pappers/43.21A/_collection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from _collection"
+              "title": "Outgoing links"
             }
           },
           {
@@ -307,13 +305,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "database/raw-pappers/43.21A/_collection.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of _collection"
+              "title": "Outline"
             }
           },
           {
@@ -347,15 +344,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3d085bfafb1afce",
+  "active": "28d75bd9594a8992",
   "lastOpenFiles": [
+    "database/raw-pappers/43.22B/972501209-entreprise-f-maillet",
+    "database/raw-pappers/43.22B/530117308-atout-gaz-bouquet",
+    "database/raw-pappers/43.22B/841927395-dimeo",
+    "database/raw-pappers/43.22B/481529857-blanc-gilbert",
+    "database/raw-pappers/43.22B/814973384-ck-energie",
+    "database/raw-pappers/43.22B/753214212-vial-climatique",
+    "database/raw-pappers/43.22B/302096219-sedicam",
+    "database/raw-pappers/43.22B/453869570-climoconfort",
+    "database/raw-pappers/43.22B/332568831-essam",
+    "database/raw-pappers/43.22B/350703138-entreprise-j-burlinchon-et-fils",
+    "database/raw-pappers/43.22B/451529101-dauphine-isolation-gaines",
     "database/raw-pappers/43.21A/_collection.md",
     "database/raw-pappers/43.22B/_collection.md",
     "workflows/pappers-naf-screening.md",
-    "database/raw-pappers/43.21A",
-    "database/raw-pappers/43.22B",
-    "database/raw-pappers",
-    "database",
     "references/codes-naf-installateurs-cvc-pac-photovoltaique.md",
     "references/buy-and-build-thesis.md",
     "references/business-analysis-grid.md",
@@ -375,10 +379,6 @@
     "templates/index-entry.md",
     "templates/article.md",
     "templates/log-entry.md",
-    "templates/concept.md",
-    "workflows",
-    "policies",
-    "references",
-    "templates"
+    "templates/concept.md"
   ]
 }
