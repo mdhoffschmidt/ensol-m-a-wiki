@@ -69,7 +69,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "ensol-m-a-wiki"
+                  "title": "[ . ] Action Required | ensol-m-a-wiki"
                 }
               },
               {
@@ -82,8 +82,7 @@
                   "title": "New tab"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "horizontal"
@@ -257,8 +256,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3640745469a22fac",
+  "active": "99d889b843ea44dc",
   "lastOpenFiles": [
+    "workflows/ingest.md",
+    "workflows/query.md",
+    "workflows/lint.md",
+    "workflows/synthesis.md",
+    "workflows/initialisation.md",
+    "policies/writing-discipline.md",
+    "policies/source-fidelity.md",
+    "policies/contradiction-preservation.md",
+    "references/business-analysis-grid.md",
+    "references/article-types.md",
+    "templates/raw-source.md",
+    "templates/person.md",
+    "templates/company.md",
+    "templates/index-entry.md",
+    "templates/article.md",
+    "templates/log-entry.md",
+    "templates/concept.md",
+    "AGENTS.md",
+    "workflows",
+    "policies",
+    "references",
+    "templates",
     "Untitled"
   ]
 }
