@@ -10,7 +10,7 @@
           {
             "id": "8fdee2ef28e19aa5",
             "type": "tabs",
-            "dimension": 68.35978835978837,
+            "dimension": 31.53439153439154,
             "children": [
               {
                 "id": "a3d085bfafb1afce",
@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "workflows/pappers-naf-screening.md",
+                    "file": "database/raw-pappers/43.21A/_collection.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "pappers-naf-screening"
+                  "title": "_collection"
                 }
               }
             ]
@@ -31,7 +31,7 @@
           {
             "id": "a9772bdf031ea844",
             "type": "tabs",
-            "dimension": 31.64021164021164,
+            "dimension": 68.46560846560847,
             "children": [
               {
                 "id": "99d889b843ea44dc",
@@ -245,6 +245,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "database/raw-pappers/43.21A/_collection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -254,7 +255,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for _collection"
             }
           },
           {
@@ -263,11 +264,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "database/raw-pappers/43.21A/_collection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from _collection"
             }
           },
           {
@@ -305,12 +307,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "database/raw-pappers/43.21A/_collection.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of _collection"
             }
           },
           {
@@ -344,7 +347,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "28d75bd9594a8992",
+  "active": "a3d085bfafb1afce",
   "lastOpenFiles": [
     "database/raw-pappers/43.21A/_collection.md",
     "database/raw-pappers/43.22B/_collection.md",
