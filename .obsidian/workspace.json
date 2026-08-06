@@ -10,7 +10,7 @@
           {
             "id": "8fdee2ef28e19aa5",
             "type": "tabs",
-            "dimension": 68.49894291754757,
+            "dimension": 68.35978835978837,
             "children": [
               {
                 "id": "a3d085bfafb1afce",
@@ -31,7 +31,7 @@
           {
             "id": "a9772bdf031ea844",
             "type": "tabs",
-            "dimension": 31.501057082452434,
+            "dimension": 31.64021164021164,
             "children": [
               {
                 "id": "99d889b843ea44dc",
@@ -346,6 +346,8 @@
   },
   "active": "28d75bd9594a8992",
   "lastOpenFiles": [
+    "database/raw-pappers/43.21A/_collection.md",
+    "database/raw-pappers/43.22B/_collection.md",
     "workflows/pappers-naf-screening.md",
     "database/raw-pappers/43.21A",
     "database/raw-pappers/43.22B",

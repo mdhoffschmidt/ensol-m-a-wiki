@@ -20,9 +20,11 @@ Attention : si une consigne mentionne `42.31A` pour le photovoltaique, verifier 
 ```text
 database/raw-pappers/
   43.22B/
+    _collection.md
     <SIREN>-<slug-entreprise>/
       pappers.md
   43.21A/
+    _collection.md
     <SIREN>-<slug-entreprise>/
       pappers.md
 ```
@@ -40,14 +42,15 @@ Regles de nommage :
 Minimiser les appels API Pappers.
 
 - Ne jamais appeler un endpoint lourd avant d'avoir verifie que l'information n'existe pas deja dans `database/raw-pappers/`.
-- Faire une recherche paginee par code NAF avec des `return_fields` strictement minimaux.
+- Faire une premiere passe d'inventaire par code NAF avec des `return_fields` strictement minimaux.
+- Faire une deuxieme passe d'enrichissement uniquement pour les candidats qui passent un premier filtre business.
 - Eviter les champs payants ou lourds, notamment `scoring_financier`, `scoring_non_financier`, cartographie, comptes complets, actes, beneficiaires effectifs et documents, sauf demande explicite.
-- Ne pas appeler `informations_entreprise` pour chaque resultat brut si la reponse de recherche contient deja les champs necessaires au resume minimal.
+- Ne jamais appeler `informations_entreprise` pour chaque resultat brut.
 - Dedupliquer les SIREN entre pages et entre codes avant tout appel de detail.
 - Traiter par batch limite : collecter une page, ecrire les fiches manquantes, puis continuer seulement si l'utilisateur demande plus de profondeur ou une zone geographique precise.
 - Preferer enrichir une fiche existante plutot que refaire une recherche globale.
 
-## Champs minimaux de recherche
+## Passe 1 : inventaire leger
 
 Pour `recherche_entreprises`, demander seulement les champs utiles au tri initial :
 
@@ -60,14 +63,9 @@ Pour `recherche_entreprises`, demander seulement les champs utiles au tri initia
 - `entreprise_cessee`
 - `statut_rcs`
 - `siege`
-- `effectif`
-- `effectif_min`
-- `effectif_max`
 - `tranche_effectif`
 - `annee_effectif`
 - `forme_juridique`
-- `representants`
-- `sites_internet`
 
 Ajouter des filtres seulement s'ils servent la decision :
 
@@ -77,6 +75,20 @@ Ajouter des filtres seulement s'ils servent la decision :
 - `departement` ou `region` si la recherche est geographique.
 - `effectif_min`, `effectif_max`, `chiffre_affaires_min` ou `chiffre_affaires_max` seulement si la these impose une taille cible.
 
+Champs exclus de la passe 1 :
+
+- `representants`
+- `sites_internet`
+- `telephone`
+- `email`
+- `finances`
+- `comptes`
+- `beneficiaires_effectifs`
+- `depots_actes`
+- `cartographie_entreprise`
+- `scoring_financier`
+- `scoring_non_financier`
+
 ## Procedure
 
 ### 1. Verifier l'existant
@@ -84,6 +96,7 @@ Ajouter des filtres seulement s'ils servent la decision :
 - Lister `database/raw-pappers/<code-naf>/`.
 - Relever les SIREN deja collectes.
 - Si le dossier code NAF n'existe pas, le creer.
+- Si `_collection.md` n'existe pas dans le dossier code NAF, le creer.
 - Si une fiche entreprise existe deja, ne pas la reecrire integralement : completer uniquement les champs manquants et conserver la source precedente.
 
 ### 2. Rechercher les entreprises
@@ -100,17 +113,38 @@ recherche_entreprises(
   code_naf=<43.22B ou 43.21A>,
   entreprise_cessee=false,
   par_page=<maximum raisonnable>,
-  return_fields=<champs minimaux>
+  return_fields=<champs minimaux de passe 1>
 )
 ```
 
-### 3. Dedupliquer
+### 3. Mettre a jour `_collection.md`
+
+Apres chaque page collectee, mettre a jour `database/raw-pappers/<code-naf>/_collection.md`.
+
+Template :
+
+```markdown
+# Collecte Pappers <code-naf>
+
+- Source : Pappers
+- Code NAF : <code-naf>
+- Date derniere collecte : <YYYY-MM-DD>
+- Filtres : code_naf=<code-naf>, entreprise_cessee=false, <autres filtres ou aucun>
+- Pagination traitee : <pages ou curseurs>
+- Appels Pappers realises : <nombre>
+- SIREN crees : <nombre>
+- SIREN ignores car deja presents : <nombre>
+- Prochaine reprise : <page, curseur ou null>
+- Limites : <donnees non appelees pour economiser les credits>
+```
+
+### 4. Dedupliquer
 
 - Normaliser chaque resultat par SIREN.
 - Ignorer les doublons deja presents dans le dossier du code NAF.
 - Si une entreprise apparait dans plusieurs codes ou a change de dominante, conserver une fiche par emplacement de collecte et noter le code source.
 
-### 4. Creer une fiche brute par entreprise
+### 5. Creer une fiche brute par entreprise
 
 Pour chaque resultat retenu :
 
@@ -121,7 +155,11 @@ Pour chaque resultat retenu :
 - Les champs inconnus restent a `null`, pas `[nc]`, dans le frontmatter.
 - `source_query` doit refleter le filtre utilise, au format `naf-<code-naf-minuscule-sans-point>`, exemple `naf-4322b`.
 - `pappers_url` doit utiliser le format `https://www.pappers.fr/entreprise/<slug-nom-entreprise>-<SIREN>` quand l'URL exacte n'est pas fournie par Pappers.
-- `business_types` doit contenir au moins une valeur. Utiliser `autre-a-qualifier` tant que le metier reel n'est pas qualifie.
+- `business_types` doit contenir au moins une valeur.
+- Mapper `business_types` depuis le code NAF tant que le metier reel n'est pas qualifie :
+  - `43.22B` : `cvc-pac-clim-a-qualifier`
+  - `43.21A` : `photovoltaique-toiture-a-qualifier`
+  - ambigu ou autre code : `autre-a-qualifier`
 
 Frontmatter obligatoire de `pappers.md` :
 
@@ -146,7 +184,7 @@ wiki_topic: null
 pappers_url: "https://www.pappers.fr/entreprise/<slug-nom-entreprise>-<SIREN>"
 website: null
 business_types:
-  - autre-a-qualifier
+  - cvc-pac-clim-a-qualifier
 ---
 
 # <Nom entreprise>
@@ -161,14 +199,14 @@ business_types:
 - Forme juridique : <forme_juridique>
 - Creation : <date_creation>
 - Effectif : <effectif ou tranche_effectif, annee_effectif>
-- Dirigeants : <representants disponibles dans la reponse minimale>
-- Site web : <sites_internet ou [nc]>
+- Dirigeants : [nc]
+- Site web : [nc]
 - Resume brut : <1-3 bullets factuels>
 - Interet buy-and-build : <qualification initiale ou [nc]>
 - Limites : <champs absents, donnees non appelees pour economiser les credits>
 ```
 
-### 5. Enrichir seulement si necessaire
+### 6. Passe 2 : enrichir seulement si necessaire
 
 Appeler `informations_entreprise` uniquement pour les entreprises qui passent un premier filtre business :
 
@@ -197,7 +235,7 @@ Champs a eviter sauf validation explicite :
 - `comptes_entreprise` avec bilan complet
 - documents, actes, statuts et beneficiaires effectifs
 
-### 6. Qualifier sans polluer le wiki
+### 7. Qualifier sans polluer le wiki
 
 - Les fiches `database/raw-pappers/` restent des donnees brutes.
 - Promouvoir vers `wiki/companies/` seulement si l'entreprise devient qualifiee pour diligence, comparaison, rapprochement, transformation ou exclusion documentee.
