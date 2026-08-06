@@ -10,7 +10,7 @@
           {
             "id": "8fdee2ef28e19aa5",
             "type": "tabs",
-            "dimension": 53.333333333333336,
+            "dimension": 21.164021164021165,
             "children": [
               {
                 "id": "a3d085bfafb1afce",
@@ -31,7 +31,7 @@
           {
             "id": "a9772bdf031ea844",
             "type": "tabs",
-            "dimension": 46.666666666666664,
+            "dimension": 78.83597883597884,
             "children": [
               {
                 "id": "99d889b843ea44dc",
@@ -165,11 +165,11 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "⠼ ensol-m-a-wiki"
+                  "title": "[ . ] Action Required | ensol-m-a-wiki"
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           }
         ],
         "direction": "horizontal"
@@ -344,7 +344,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3640745469a22fac",
+  "active": "167c66da1e81aa2c",
   "lastOpenFiles": [
     "database/raw-pappers/43.22B/522047281-abclimatisation/pappers.md",
     "database/raw-pappers/43.22B/351047113-soc-d-exploitation-des-ets-sepui/pappers.md",
