@@ -17,12 +17,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "references/buy-and-build-thesis.md",
+                    "file": "references/codes-naf-installateurs-cvc-pac-photovoltaique.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "buy-and-build-thesis"
+                  "title": "codes-naf-installateurs-cvc-pac-photovoltaique"
                 }
               }
             ]
@@ -73,7 +73,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "[ . ] Action Required | ensol-m-a-wiki"
+                  "title": "ensol-m-a-wiki"
                 }
               },
               {
@@ -163,10 +163,11 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "⠴ ensol-m-a-wiki"
+                  "title": "ensol-m-a-wiki"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           }
         ],
         "direction": "horizontal"
@@ -325,7 +326,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -340,8 +342,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "99d889b843ea44dc",
+  "active": "28d75bd9594a8992",
   "lastOpenFiles": [
+    "database/raw-pappers",
+    "database",
+    "references/codes-naf-installateurs-cvc-pac-photovoltaique.md",
     "references/buy-and-build-thesis.md",
     "references/business-analysis-grid.md",
     "references/article-types.md",
@@ -364,7 +369,6 @@
     "workflows",
     "policies",
     "references",
-    "templates",
-    "Untitled"
+    "templates"
   ]
 }
