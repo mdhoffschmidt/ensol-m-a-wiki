@@ -10,7 +10,7 @@
           {
             "id": "8fdee2ef28e19aa5",
             "type": "tabs",
-            "dimension": 31.53439153439154,
+            "dimension": 53.333333333333336,
             "children": [
               {
                 "id": "a3d085bfafb1afce",
@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "database/raw-pappers/43.21A/_collection.md",
+                    "file": "database/raw-pappers/43.22B/481529857-blanc-gilbert/pappers.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "_collection"
+                  "title": "pappers"
                 }
               }
             ]
@@ -31,7 +31,7 @@
           {
             "id": "a9772bdf031ea844",
             "type": "tabs",
-            "dimension": 68.46560846560847,
+            "dimension": 46.666666666666664,
             "children": [
               {
                 "id": "99d889b843ea44dc",
@@ -165,7 +165,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "ensol-m-a-wiki"
+                  "title": "⠙ ensol-m-a-wiki"
                 }
               }
             ],
@@ -344,13 +344,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3640745469a22fac",
+  "active": "28d75bd9594a8992",
   "lastOpenFiles": [
+    "scripts/collect_pappers_naf.py",
+    "scripts",
+    "database/raw-pappers/43.22B/481529857-blanc-gilbert/pappers.md",
+    "database/raw-pappers/43.22B/814973384-ck-energie/pappers.md",
     "database/raw-pappers/43.22B/972501209-entreprise-f-maillet/pappers.md",
     "database/raw-pappers/43.22B/530117308-atout-gaz-bouquet/pappers.md",
     "database/raw-pappers/43.22B/841927395-dimeo/pappers.md",
-    "database/raw-pappers/43.22B/481529857-blanc-gilbert/pappers.md",
-    "database/raw-pappers/43.22B/814973384-ck-energie/pappers.md",
     "database/raw-pappers/43.22B/753214212-vial-climatique/pappers.md",
     "database/raw-pappers/43.22B/302096219-sedicam/pappers.md",
     "database/raw-pappers/43.22B/453869570-climoconfort/pappers.md",
@@ -368,7 +370,6 @@
     "database/raw-pappers/43.22B/302096219-sedicam",
     "database/raw-pappers/43.22B/453869570-climoconfort",
     "database/raw-pappers/43.22B/332568831-essam",
-    "database/raw-pappers/43.22B/350703138-entreprise-j-burlinchon-et-fils",
     "database/raw-pappers/43.21A/_collection.md",
     "database/raw-pappers/43.22B/_collection.md",
     "workflows/pappers-naf-screening.md",
@@ -380,7 +381,6 @@
     "workflows/ingest.md",
     "workflows/query.md",
     "workflows/lint.md",
-    "workflows/synthesis.md",
-    "workflows/initialisation.md"
+    "workflows/synthesis.md"
   ]
 }
