@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "database/raw-pappers/43.22B/481529857-blanc-gilbert/pappers.md",
+                    "file": "database/raw-pappers/43.22B/522047281-abclimatisation/pappers.md",
                     "mode": "source",
                     "source": false
                   },
@@ -165,7 +165,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "⠙ ensol-m-a-wiki"
+                  "title": "⠼ ensol-m-a-wiki"
                 }
               }
             ],
@@ -229,7 +229,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 431.5
   },
   "right": {
     "id": "1ce32f529b6ede53",
@@ -344,43 +344,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "28d75bd9594a8992",
+  "active": "3640745469a22fac",
   "lastOpenFiles": [
-    "scripts/collect_pappers_naf.py",
-    "scripts",
-    "database/raw-pappers/43.22B/481529857-blanc-gilbert/pappers.md",
-    "database/raw-pappers/43.22B/814973384-ck-energie/pappers.md",
-    "database/raw-pappers/43.22B/972501209-entreprise-f-maillet/pappers.md",
-    "database/raw-pappers/43.22B/530117308-atout-gaz-bouquet/pappers.md",
-    "database/raw-pappers/43.22B/841927395-dimeo/pappers.md",
-    "database/raw-pappers/43.22B/753214212-vial-climatique/pappers.md",
-    "database/raw-pappers/43.22B/302096219-sedicam/pappers.md",
-    "database/raw-pappers/43.22B/453869570-climoconfort/pappers.md",
-    "database/raw-pappers/43.22B/332568831-essam/pappers.md",
-    "database/raw-pappers/43.22B/350703138-entreprise-j-burlinchon-et-fils/pappers.md",
-    "database/raw-pappers/43.22B/451529101-dauphine-isolation-gaines/pappers.md",
-    "database/raw-pappers/43.22B/306262437-elec-gaz-service/pappers.md",
-    "database/raw-pappers/43.22B/519220123-raby/pappers.md",
-    "database/raw-pappers/43.22B/972501209-entreprise-f-maillet",
-    "database/raw-pappers/43.22B/530117308-atout-gaz-bouquet",
-    "database/raw-pappers/43.22B/841927395-dimeo",
-    "database/raw-pappers/43.22B/481529857-blanc-gilbert",
-    "database/raw-pappers/43.22B/814973384-ck-energie",
-    "database/raw-pappers/43.22B/753214212-vial-climatique",
-    "database/raw-pappers/43.22B/302096219-sedicam",
-    "database/raw-pappers/43.22B/453869570-climoconfort",
-    "database/raw-pappers/43.22B/332568831-essam",
-    "database/raw-pappers/43.21A/_collection.md",
-    "database/raw-pappers/43.22B/_collection.md",
-    "workflows/pappers-naf-screening.md",
-    "references/codes-naf-installateurs-cvc-pac-photovoltaique.md",
-    "references/buy-and-build-thesis.md",
-    "references/business-analysis-grid.md",
-    "references/article-types.md",
-    "AGENTS.md",
-    "workflows/ingest.md",
-    "workflows/query.md",
-    "workflows/lint.md",
-    "workflows/synthesis.md"
+    "database/raw-pappers/43.22B/522047281-abclimatisation/pappers.md",
+    "database/raw-pappers/43.22B/351047113-soc-d-exploitation-des-ets-sepui/pappers.md",
+    "database/raw-pappers/43.22B/351047113-soc-d-exploitation-des-ets-sepui",
+    "database/raw-pappers/43.22B/403687833-asfb-art-et-savoir-faire-du-batiment/pappers.md",
+    "database/raw-pappers/43.22B/403687833-asfb-art-et-savoir-faire-du-batiment",
+    "database/raw-pappers/43.22B/920346731-renaissance/pappers.md",
+    "database/raw-pappers/43.22B/920346731-renaissance",
+    "database/raw-pappers/43.22B/393033717-sani-therm-60/pappers.md",
+    "database/raw-pappers/43.22B/393033717-sani-therm-60",
+    "database/raw-pappers/43.22B/793314469-imp/pappers.md",
+    "database/raw-pappers/43.22B/793314469-imp",
+    "database/raw-pappers/43.22B/841360274-aci/pappers.md",
+    "database/raw-pappers/43.22B/841360274-aci",
+    "database/raw-pappers/43.22B/398046391-ets-annaloro/pappers.md",
+    "database/raw-pappers/43.22B/398046391-ets-annaloro",
+    "database/raw-pappers/43.22B/389492786-ddm-delannoy-dewailly-maintenance/pappers.md",
+    "database/raw-pappers/43.22B/389492786-ddm-delannoy-dewailly-maintenance",
+    "database/raw-pappers/43.22B/824926901-omeo-services/pappers.md",
+    "database/raw-pappers/43.22B/824926901-omeo-services",
+    "database/raw-pappers/43.22B/404927675-technigaz-valengreen/pappers.md",
+    "database/raw-pappers/43.22B/404927675-technigaz-valengreen",
+    "database/raw-pappers/43.22B/392322681-hydroline/pappers.md",
+    "database/raw-pappers/43.22B/491218400-vdl-chauffage-van-der-linde-chauffage/pappers.md",
+    "database/raw-pappers/43.22B/479726705-bmi-batiment-maisons-individuelles/pappers.md",
+    "database/raw-pappers/43.22B/448839233-cap-habitat/pappers.md",
+    "database/raw-pappers/43.22B/316056779-nordflam/pappers.md",
+    "database/raw-pappers/43.22B/433724051-axian/pappers.md",
+    "database/raw-pappers/43.22B/814572277-conseil-habitat-energie/pappers.md",
+    "database/raw-pappers/43.22B/493883805-opale-geothermie/pappers.md",
+    "database/raw-pappers/43.22B/319203238-leclerc-jean-jacques-et-chery-gerard/pappers.md",
+    "database/raw-pappers/43.22B/776224636-etablissement-servais/pappers.md",
+    "database/raw-pappers/43.22B/507470920-eco-2-energies/pappers.md",
+    "database/raw-pappers/43.22B/382063873-motif/pappers.md",
+    "database/raw-pappers/43.22B/517795753-optihome/pappers.md",
+    "database/raw-pappers/43.22B/312869209-ecotep/pappers.md",
+    "database/raw-pappers/43.22B/833599640-gaia/pappers.md"
   ]
 }
