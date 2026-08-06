@@ -10,6 +10,7 @@
           {
             "id": "8fdee2ef28e19aa5",
             "type": "tabs",
+            "dimension": 68.49894291754757,
             "children": [
               {
                 "id": "a3d085bfafb1afce",
@@ -30,6 +31,7 @@
           {
             "id": "a9772bdf031ea844",
             "type": "tabs",
+            "dimension": 31.501057082452434,
             "children": [
               {
                 "id": "99d889b843ea44dc",
@@ -163,7 +165,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "⠙ ensol-m-a-wiki"
+                  "title": "ensol-m-a-wiki"
                 }
               }
             ],

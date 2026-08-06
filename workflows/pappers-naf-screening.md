@@ -117,10 +117,38 @@ Pour chaque resultat retenu :
 - Creer `database/raw-pappers/<code-naf>/<SIREN>-<slug-nom-entreprise>/`.
 - Creer `pappers.md`.
 - Ne pas promouvoir automatiquement vers `wiki/companies/`.
+- Chaque `pappers.md` doit commencer par le frontmatter YAML normalise ci-dessous.
+- Les champs inconnus restent a `null`, pas `[nc]`, dans le frontmatter.
+- `source_query` doit refleter le filtre utilise, au format `naf-<code-naf-minuscule-sans-point>`, exemple `naf-4322b`.
+- `pappers_url` doit utiliser le format `https://www.pappers.fr/entreprise/<slug-nom-entreprise>-<SIREN>` quand l'URL exacte n'est pas fournie par Pappers.
+- `business_types` doit contenir au moins une valeur. Utiliser `autre-a-qualifier` tant que le metier reel n'est pas qualifie.
 
-Template de `pappers.md` :
+Frontmatter obligatoire de `pappers.md` :
 
 ```markdown
+---
+record_type: "company"
+source: "pappers"
+source_query: "naf-4322b"
+company_name: "<Nom entreprise>"
+siren: "<SIREN>"
+country: "france"
+city: "<ville siege ou null>"
+area_code: "<departement ou null>"
+naf_code: "<43.22B ou 43.21A>"
+date_created: "<date_creation ou null>"
+revenue_2023: null
+revenue_2024: null
+revenue_2025: null
+employee_numbers: "<effectif ou tranche_effectif ou null>"
+qualified: false
+wiki_topic: null
+pappers_url: "https://www.pappers.fr/entreprise/<slug-nom-entreprise>-<SIREN>"
+website: null
+business_types:
+  - autre-a-qualifier
+---
+
 # <Nom entreprise>
 
 - Source : Pappers
